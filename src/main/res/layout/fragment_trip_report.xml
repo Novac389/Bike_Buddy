@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/vmax_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vmax_lable"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/max_speed"
+        app:layout_constraintEnd_toEndOf="@+id/max_speed"
+        app:layout_constraintStart_toStartOf="@+id/max_speed"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/max_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/average_speed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vmax_lable"/>
+
+
+    <TextView
+        android:id="@+id/avgspeed_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/velocita_media"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/average_speed"
+        app:layout_constraintEnd_toEndOf="@+id/average_speed"
+        app:layout_constraintStart_toStartOf="@+id/average_speed"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/average_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/max_speed"
+        app:layout_constraintTop_toBottomOf="@+id/avgspeed_lable" />
+
+    <TextView
+        android:id="@+id/distance_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distanza"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/distance"
+        app:layout_constraintEnd_toEndOf="@+id/distance"
+        app:layout_constraintStart_toStartOf="@+id/distance"
+        app:layout_constraintTop_toBottomOf="@id/max_speed"/>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/max_speed"
+        app:layout_constraintStart_toStartOf="@id/max_speed"
+        app:layout_constraintTop_toBottomOf="@id/distance_lable"/>
+
+    <TextView
+        android:id="@+id/lean_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/piega_massima"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/max_lean"
+        app:layout_constraintEnd_toEndOf="@+id/max_lean"
+        app:layout_constraintStart_toStartOf="@+id/max_lean"
+        app:layout_constraintTop_toBottomOf="@id/average_speed"/>
+
+    <TextView
+        android:id="@+id/max_lean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/average_speed"
+        app:layout_constraintStart_toStartOf="@+id/average_speed"
+        app:layout_constraintTop_toBottomOf="@id/lean_lable"/>
+
+    <TextView
+        android:id="@+id/time_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tempo"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/ride_time"
+        app:layout_constraintEnd_toEndOf="@+id/ride_time"
+        app:layout_constraintStart_toStartOf="@+id/ride_time"
+        app:layout_constraintTop_toBottomOf="@id/distance"/>
+
+    <TextView
+        android:id="@+id/ride_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_lable" />
+
+    <fragment
+        android:id="@+id/report_map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ride_time" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

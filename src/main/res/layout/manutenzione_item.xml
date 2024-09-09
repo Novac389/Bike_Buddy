@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trip_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="6dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="5dp"
+
+    >
+    <TextView
+        android:id="@+id/manutenzione_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/racingRed"
+        android:paddingEnd="16dp"
+        android:maxLines="1"
+        android:textSize="25sp"
+        />
+
+
+    <TextView
+        android:id="@+id/manutenzione_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/manutenzione_title"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress_manutenzione"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/manutenzione_info"
+        android:layout_gravity="center_vertical"
+        app:trackCornerRadius="2dp"/>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

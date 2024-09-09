@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Bike Buddy</string>
+    <string name="title_storico">Storico viaggi</string>
+    <string name="title_trip">Trip monitoring</string>
+    <string name="title_manutenzione">Manutenzione</string>
+    <string name="elimina">Elimina</string>
+    <string name="annulla">Annulla</string>
+    <string name="no_data">Non hai salvato nessun viaggio</string>
+    <string name="trip_info_title">Viaggio del %1$s</string>
+    <string name="trip_info_subtitle">Hai percorso: %1$s km</string>
+    <string name="km_string">%1$s km</string>
+    <string name="kmh_string">%1$s km/h</string>
+    <string name="km_mancanti">Mancano %1$s km alla manutenzione</string>
+    <string name="eseguire_manutenzione">Attenzione! eseguire la manutenzione al più presto</string>
+    <string name="manutenzione_dialog_title">Azzera kilometri</string>
+    <string name="manutenzione_dialog_description">Hai eseguitocorrettamente la manutenzione?</string>
+    <string name="si">Si</string>
+    <string name="no">Non ancora</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="channel_name">Notifiche manutenzione</string>
+    <string name="channel_description">Ricevi le notifichequando è il momento di fare manutenzione alla moto</string>
+    <string name="lean_text">%1$s °</string>
+    <string name="vmax_lable">Velocità massima</string>
+    <string name="velocita_media">Velocità media</string>
+    <string name="distanza">Distanza</string>
+    <string name="piega_massima">Piega massima</string>
+    <string name="tempo">Tempo</string>
+    <string name="km_h">Km/h</string>
+    <string name="totale_km_percorsi">Hai percorso in totale:</string>
+    <string name="richiesta_permessi">Questa app per funzionare richiede di accedere alla posizione</string>
+    <string name="riprova">Riprova</string>
+    <string name="opzioni">Opzioni</string>
+
+    <string-array name="titoli_manutenzioni">
+        <item>Pulizia catena</item>
+        <item>Pressione pneumatici</item>
+        <item>Livelli Fluidi</item>
+        <item>Cambio Gomme</item>>
+    </string-array>
+
+    <string-array name="km_manutenzioni">
+        <item>500</item>
+        <item>150</item>
+        <item>250</item>
+        <item>20000</item>
+    </string-array>
+
+    <string-array name="key_manutenzioni">
+        <item>CATENA</item>
+        <item>PNEUMATICI</item>
+        <item>FLUIDI</item>
+        <item>CAMBIOGOMME</item>
+    </string-array>
+</resources>
